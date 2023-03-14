@@ -1,0 +1,262 @@
+@media (max-width: 1200px) {
+  .section {
+    padding: 10vw 0;
+  }
+
+  .title,
+  .portfolio-nav,
+  .works {
+    margin-bottom: 5vw;
+  }
+
+  .works {
+    gap: 2.3vw;
+  }
+
+  .reviews__inner {
+    gap: 5vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .burger {
+    display: block;
+  }
+
+  .header__nav {
+    padding: 15px 0;
+    /* position: relative; */
+    transition: background-color 0.3s;
+  }
+
+  .header__nav.active {
+    background-color: #7792e0;
+  }
+
+  .header__nav.active .menu {
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  .menu {
+    position: absolute;
+    z-index: 999;
+    right: 0;
+    top: 100%;
+    max-width: 500px;
+    width: 100%;
+    height: calc(100vh - 66px);
+    overflow-y: auto;
+    flex-direction: column;
+    text-align: center;
+    background-color: #7792e0;
+    transform: translateX(200%);
+    opacity: 0;
+    transition: transform 0.5s, opacity 0.4s;
+  }
+
+  .menu--active {
+    opacity: 1;
+    transform: translatex(0%);
+  }
+
+  .menu__item:not(:last-child) {
+    margin-right: 0px;
+  }
+
+  .menu__link {
+    display: block;
+    padding: 11px;
+  }
+
+  .menu__link:active {
+    background-color: blue;
+  }
+
+  .stats__item {
+    padding-top: 12.5vw;
+    background-size: 8.3vw 6.66vw;
+    background-position: center top 35px;
+  }
+
+  .stats__numbers {
+    font-size: calc(30px + (44 - 30) * ((100vw - 375px) / (992 - 375)));
+  }
+}
+
+@media (max-width: 768px) {
+  .title {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    width: fit-content;
+  }
+
+  .lines__item {
+    margin-bottom: 10vw;
+  }
+
+  .reviews__inner {
+    position: relative;
+  }
+
+  .qoute {
+    padding: 0;
+  }
+
+  .quote__img {
+    margin-bottom: 30px;
+  }
+
+  .quote__text {
+    font-size: 16px;
+  }
+
+  .quote__name {
+    font-size: 20px;
+  }
+
+  .reviews__video {
+    position: absolute;
+    left: 50%;
+    top: 90px;
+    transform: translateX(40%);
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-size: cover;
+  }
+
+  .reviews__video::before {
+    width: 17px;
+    height: 20px;
+  }
+
+  .stats__list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .title,
+  .portfolio-nav,
+  .works {
+    margin-bottom: 30px;
+  }
+
+  .logo {
+    width: 110px;
+  }
+
+  .header__inner {
+    height: calc(100vh - 100px);
+  }
+
+  .header__link {
+    bottom: 15px;
+    font-size: 14px;
+  }
+
+  .about__text p {
+    font-size: 16px;
+  }
+
+  .about__text p:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .skills__inner {
+    grid-template-columns: unset;
+    padding: 0 22.5px;
+    justify-content: center;
+  }
+
+  .lines__item {
+    flex-direction: column;
+    margin-bottom: 24px;
+  }
+
+  .lines__meter {
+    height: 32px;
+  }
+
+  .lines__text {
+    min-width: unset;
+    display: block;
+    font-size: 18px;
+    line-height: 1;
+    margin-bottom: 5px;
+  }
+
+  .services__card {
+    max-width: 500px;
+    padding-top: 50px;
+    background-size: 40px;
+  }
+
+  .services__name {
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+
+  .portfolio {
+    padding-top: 15px;
+  }
+
+  .portfolio-nav__item {
+    flex-basis: 100%;
+  }
+
+  .portfolio-nav__btn {
+    font-size: 18px;
+  }
+
+  .works {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .stats__item {
+    padding: 68px 15px 25px;
+    background-size: 42px 35px;
+    background-position: center top 25px;
+  }
+
+  .stats__text {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .stats__numbers {
+    font-size: 30px;
+  }
+
+  .contacts {
+    padding: 0;
+  }
+
+  .contacts__inner {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts__list {
+    margin-bottom: 30px;
+  }
+  .form__row {
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .form__group--textarea {
+    margin-bottom: 15px;
+  }
+
+  .footer {
+    padding: 32px 0;
+  }
+}
